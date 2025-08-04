@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AnimeXtreme - Hard++</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>AnimeXtreme 🎌</h1>
+      <input type="text" id="searchInput" placeholder="Search anime..." />
+      <button id="darkModeToggle">🌙</button>
+    </header>
+
+    <section id="filters">
+      <select id="genreFilter"><option value="">All Genres</option></select>
+      <select id="typeFilter"><option value="">All Types</option></select>
+      <select id="ratingFilter"><option value="">All Ratings</option></select>
+    </section>
+
+    <section>
+      <h2>🔥 Trending Anime</h2>
+      <div id="trendingAnime" class="anime-grid"></div>
+    </section>
+
+    <section>
+      <h2>🔍 Search Results</h2>
+      <div id="searchResults" class="anime-grid"></div>
+    </section>
+
+    <div id="animeModal" class="modal">
+      <div class="modal-content" id="modalContent"></div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="js/tmdb.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
